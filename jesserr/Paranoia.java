@@ -47,4 +47,13 @@ public class Paranoia extends AdvancedRobot {// tem q set AdvancedRobot
 
 		// nao precisa, "acho"
 	}	
+	
+	public void onWin(WinEvent e){
+		
+		// hump
+		for(int i=0; i<10; i++){
+			ahead(10);
+			back(10);
+		}
+	}
 }
