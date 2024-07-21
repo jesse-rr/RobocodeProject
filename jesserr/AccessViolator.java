@@ -1,25 +1,27 @@
 package jesserr;
+
 import robocode.*;
+import java.awt.Color;
 
-public class Paranoia extends AdvancedRobot {// tem q set AdvancedRobot
+public class AccessViolator extends AdvancedRobot {// tem q set AdvancedRobot
 
-	public void run() {
-
+	 public void run() {
+		setAllColors(Color.DARK_GRAY);
 		turnRadarLeft(Double.POSITIVE_INFINITY);
 
 		while(true) {
-		// nao precisa, "acho"
+		
 		}
 	}
 
-	public void onScannedRobot(ScannedRobotEvent e) {
+	 public void onScannedRobot(ScannedRobotEvent e) {
 		
 		double frente = e.getBearingRadians() + getHeadingRadians(); // achar qual direcao o tank vai virrar com enem. frente + minha frente;
 		double gunAng; // angulo da arma, definir dps
 		
 		setTurnRadarLeftRadians(getRadarTurnRemainingRadians());
-		gunAng = robocode.util.Utils.normalRelativeAngle(frente - getGunHeadingRadians()); // definir angulo da arma (variavel) -> movimento em repetiçao, mas n pode colocar no while loop, ent bota aqui msm
-		setAhead((e.getDistance() - 120)); // para aproximar inimigo -> movimento em repetiçao, mas n pode colocar no while loop, ent bota aqui msm
+		gunAng = robocode.util.Utils.normalRelativeAngle(frente - getGunHeadingRadians()); // definir angulo da arma (variavel)
+		        setAhead((e.getDistance() - 120)); // para aproximar inimigo -> movimento em repetiçao, mas n pode colocar no while loop, ent bota aqui msm
 		
 		// pegar distancia inimiga, pra variar força de tiro
 		if (e.getDistance() > 130) { 
