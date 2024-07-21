@@ -20,7 +20,7 @@ O resto basease em logica basica:
 
 "double frente = e.getBearingRadians() + getHeadingRadians();" -> variavel que pega a frente do robo enemigo + robo nosso (PI); ex: 90 - 0 = 90 (localizacao do enemigo); 
 OBS: Veja mapa abaixo
-<img src="http://mark.random-article.com/weber/java/robocode/bearings.jpg">
+<img float="left" src="http://mark.random-article.com/weber/java/robocode/bearings.jpg">
 
 "gunAng = robocode.util.Utils.normalRelativeAngle(frente - getGunHeadingRadians());" -> exatamente a mesma coisa do que o acima, mas pra arma;
 
