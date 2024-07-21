@@ -1,4 +1,4 @@
-# Added Read me for comprehension;
+# Added Read me for comprehension
 
 
 turnRadarLeft(Double.POSITIVE_INFINITY); -> Double.POSITIVE_INFINITY indica que vai aumentar os angulos infinitamente de forma positiva (+)(direita), virando o Radar a todo momento pra esquerda. 
